@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" lang="en">
+<head>
+<title>CS-240 Syllabus</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+</script>
+</head>
+<body>
+<h1>CS-240 Syllabus</h1>
+<div id="topnavbar">
+<ul class="topnavlist">
+<li><a href="index.html">CS-240 Home</a></li>
+<li><a href="syllabus.html">Syllabus</a></li>
+<li><a href="assignments.html">Assignments</a></li>
+<li><a href="announcements.html">Announcements</a></li>
+<li><a href="https://piazza.com/kaust.edu.sa/fall2017/cs240/home">Q &amp; A</a></li>
+</ul>
+</div>
+
+
+<h2>Schedule<a name="Schedule"></a></h2>
+
+<p>This schedule and syllabus is preliminary and subject to change.</p>
+
+<p>
+Lectures and related materials are licensed for use under a
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>. 
+Michael Freedman and Kyle Jamieson developed much of the original material.
+</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a>
+</p>
+
+<table class="schedule">
+  <tr>
+   <th>Date</th>
+   <th>Topics</th>
+   <th>Readings</th>
+   <th>Notes</th>
+ </tr>
+<tr class="lechead">
+ <td class="lechead" colspan="4">Fundamentals</td>
+</tr>
+<tr class="recitation">
+ <td>Sun 08/20</td>
+ <td>Go systems programming
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="recitation">
+ <td>Wed 08/23</td>
+ <td>Concurrency in Go [<a href="docs/P1-concurrency.pdf">pdf</a>][<a href="p1.tgz">code</a>]
+ </td> <td><i>Suggested reading:</i> <a href="https://tour.golang.org">Go Tutorial</a>  </td>
+ <td></td>
+</tr>
+<tr class="lecture">
+ <td>Sun 08/27</td>
+ <td>Course overview, principles, MapReduce
+ </td> <td><b>Pre-reading:</b> <a href="papers/map-reduce.pdf">Map Reduce</a>  </td>
+ <td><a href="a1.html">Assignment 1</a> out</td>
+</tr>
+<tr class="lecture alt">
+ <td>Wed 08/30</td>
+ <td>Network communication and Remote Procedure Calls
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="noclass">
+ <td>Sun 09/03</td>
+ <td>Eid Al-Adha break
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="noclass">
+ <td>Wed 09/06</td>
+ <td>Eid Al-Adha break
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="lecture">
+ <td>Sun 09/10</td>
+ <td>Virtualization and Cloud computing
+ </td> <td>See also the <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf">book chapter on Virtual Machines from the Wisconsin OS book</a> </td>
+ <td></td>
+</tr>
+<tr class="lecture alt">
+ <td>Wed 09/13</td>
+ <td>Network file systems
+ </td> <td>See also the <a href="http://ostep.org">book chapters on AFS and NFS from the Wisconsin OS book</a></td>
+ <td></td>
+</tr>
+<tr class="lecture">
+ <td>Sun 09/17</td>
+ <td>GFS
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="lecture alt">
+ <td>Wed 09/20</td>
+ <td>Time synchronization and logical clocks
+ </td> <td>  </td>
+ <td><a href="a1.html">Assignment 1</a> due<br/><a href="a2.html">Assignment 2 </a> out</td>
+</tr>
+<tr class="noclass">
+ <td>Sun 09/24</td>
+ <td>Saudi National Day
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="lecture alt">
+ <td>Wed 09/27</td>
+ <td>Global state and gossip
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="lechead">
+ <td class="lechead" colspan="4">Fault Tolerance</td>
+</tr>
+<tr class="lecture">
+ <td>Sun 10/01</td>
+ <td>Primary-backup replication
+ </td> <td><b>Pre-reading:</b> <a href="papers/scales-vm.pdf">VM replication</a>  </td>
+ <td></td>
+</tr>
+<tr class="noclass">
+ <td>Wed 10/04</td>
+ <td>No class
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="lecture">
+ <td>Sun 10/08</td>
+ <td>Two-phase commit, introducing safety and liveness
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="lecture alt">
+ <td>Wed 10/11</td>
+ <td><span>Consensus I:</span> FLP Impossibility, Paxos
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="lecture">
+ <td>Sun 10/15</td>
+ <td><span>Consensus II:</span> Replicated State Machines, Raft
+ </td> <td><b>Pre-reading:</b> <a href="papers/raft.pdf">Raft</a>  </td>
+ <td><a href="a2.html">Assignment 2</a> due<br/><a href="a3.html">Assignment 3</a> out</td>
+</tr>
+<tr class="lecture alt">
+ <td>Wed 10/18</td>
+ <td>Byzantine Fault Tolerance
+ </td> <td><i>Suggested reading:</i> <a href="papers/bft.pdf">Practical BFT</a><br/>See also an <a href="http://video.mit.edu/watch/practical-byzantine-fault-tolerance-9388/">online lecture about BFT by Barbara Liskov</a>  </td>
+ <td></td>
+</tr>
+<tr class="exam">
+ <td>Thu 10/19</td>
+ <td>Midterm review session
+ </td> <td>  </td>
+ <td>Bring your questions!</td>
+</tr>
+<tr class="exam">
+ <td>Sun 10/22</td>
+ <td>Midterm in-class exam
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="lechead">
+ <td class="lechead" colspan="4">Scalability, Consistency, and Transactions</td>
+</tr>
+<tr class="lecture alt">
+ <td>Wed 10/25</td>
+ <td>Peer-to-Peer Systems and Distributed Hash Tables
+ </td> <td><i>Suggested reading:</i> <a href="papers/chord.pdf">Chord</a>  </td>
+ <td></td>
+</tr>
+<tr class="lecture">
+ <td>Sun 10/29</td>
+ <td>Eventual consistency
+ </td> <td><b>Pre-reading:</b> <a href="papers/bayou.pdf">Bayou</a><br/><i>Suggested reading:</i> <a href="papers/flexible.pdf">Flexible Updates</a>  </td>
+ <td></td>
+</tr>
+<tr class="lecture alt">
+ <td>Wed 11/01</td>
+ <td><span>Scaling Services:</span> Key-Value Storage
+ </td> <td><b>Pre-reading:</b> <a href="papers/dynamo.pdf">Dynamo</a>  </td>
+ <td></td>
+</tr>
+<tr class="lecture">
+ <td>Sun 11/05</td>
+ <td>Strong consistency and CAP Theorem
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="lecture alt">
+ <td>Wed 11/08</td>
+ <td>Causal consistency
+ </td> <td><i>Suggested reading:</i> <a href="papers/cops.pdf">COPS</a>  </td>
+ <td><a href="a3.html">Assignment 3</a> due<br/><a href="a4.html">Assignment 4</a> out</td>
+</tr>
+<tr class="lecture">
+ <td>Sun 11/12</td>
+ <td>Concurrency Control, Locking, and Recovery
+ </td> <td><b>Pre-reading:</b> <a href="papers/franklin97.pdf">Franklin</a>, up to and including &sect;3.2  </td>
+ <td></td>
+</tr>
+<tr class="lecture alt">
+ <td>Wed 11/15</td>
+ <td>Concurrency Control 2 and Distributed Transactions
+ </td> <td><i>Suggested reading:</i> <a href="papers/spanner.pdf">Spanner</a>  </td>
+ <td></td>
+</tr>
+<tr class="lechead">
+ <td class="lechead" colspan="4">Boutique Topics</td>
+</tr>
+<tr class="lecture">
+ <td>Sun 11/19</td>
+ <td>Security
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="lecture alt">
+ <td>Wed 11/22</td>
+ <td>Blockchains
+ </td> <td><b>Pre-reading:</b> <a href="papers/bitcoin.pdf">Bitcoin</a>  </td>
+ <td></td>
+</tr>
+<tr class="lecture">
+ <td>Sun 11/26</td>
+ <td>Performance evaluation
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="lechead">
+ <td class="lechead" colspan="4">More Big Data Processing</td>
+</tr>
+<tr class="lecture alt">
+ <td>Wed 11/29</td>
+ <td>Data-intensive computing I: graph processing, distributed ML
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="lecture">
+ <td>Sun 12/03</td>
+ <td>Data-intensive computing II: stream processing, coordination
+ </td> <td>  </td>
+ <td></td>
+</tr>
+<tr class="exam">
+ <td>Wed 12/06</td>
+ <td>Final review session
+ </td> <td>  </td>
+ <td>Bring your questions!<br/><a href="a4.html">Assignment 4</a> due</td>
+</tr>
+<tr class="exam">
+ <td>TBA</td>
+ <td>Final exam
+ </td> <td>  </td>
+ <td></td>
+</tr>
+</table>
+</div>
+
+<hr />
+<p class="lastupdated">Last updated: 2017-08-15 16:32:51</p>
+</body>
+</html>

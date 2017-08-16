@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" lang="en">
+<head>
+<title>CS-240 Assignments</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+</script>
+</head>
+<body>
+<h1>CS-240 Assignments</h1>
+<div id="topnavbar">
+<ul class="topnavlist">
+<li><a href="index.html">CS-240 Home</a></li>
+<li><a href="syllabus.html">Syllabus</a></li>
+<li><a href="assignments.html">Assignments</a></li>
+<li><a href="announcements.html">Announcements</a></li>
+<li><a href="https://piazza.com/kaust.edu.sa/fall2017/cs240/home">Q &amp; A</a></li>
+</ul>
+</div>
+
+
+<br><h2>Programming Assignments</h2>
+
+All assignments are due at 11:59pm of their assigned days.</p>
+
+<ul>
+<li> <a href="a1.html">Assignment 1</a>: Sequential Map/Reduce (due Wednesday, September 20)</li>
+<li> <a href="a2.html">Assignment 2</a>: Distributed Map/Reduce (due Sunday, October 15)</li>
+<li> <a href="a3.html">Assignment 3</a>: Raft (due Wednesday, November 8)</li>
+<li> <a href="a4.html">Assignment 4</a>: Key-Value Storage Service (due Wednesday, December 6)</li>
+</ul>
+
+<h2>Setup your Go environment</h2>
+
+Please follow <a href="setup.html">these instructions</a> for setting up for Go environment for assignments, as well as pointers to some necessary/useful tools.
+
+<a name="submission">
+<h2>Assignment Submission</h2></a>
+
+We will use <a>Blackboard</a> to submit assignments.  Please follow the instructions given in each assignment for testing and submitting your work.
+
+<h2>Late Submission</h2>
+
+<p>You should submit your work on an assignment (electronically)
+before its due time.  All assignments will be due at 11:59pm on their
+selected days. </p>
+
+<p>You have a total of 72 late hours to use throughout the semester (but not
+beyond December 6). After you have used up your late hours, each additional
+day late will incur a 10% lateness penalty (1 minute late counts as 1 day
+late). Submissions late by 3 days or more will no longer be accepted. Friday
+and Saturday both count as days. (Late days are tracked automatically, so you
+don't need to email before using one.)</p>
+
+<p>We will grant no-penalty extensions only in the case of illness (with a
+doctor's note) or extraordinary circumstances (with the involvement of
+the dean of your residential college). If illness or an extraordinary
+circumstance will cause you to submit an assignment late, then you
+should discuss the matter with your instructor as soon as possible.</p>
+
+<p>Please plan your work on the assignments so that travel,
+interviews, athletics, touring, student clubs, extracurricular
+activities, holidays, etc. do not cause you to submit it
+late. None of the above reasons nor a heavy academic workload
+constitute an extraordinary circumstance.</p>
+
+<h2>Coding Style</h2>
+
+<p>All of the code you turn in for this course should have good style.
+Make sure that your code has proper indentation, descriptive comments,
+and a comment header at the beginning of each file, which includes
+your name, username, and a description of the file.</p>
+
+<p>A portion of credit for each assignment is determined by code
+quality tests, using the standard tools <tt>gofmt</tt> and <tt>go
+vet</tt>.  You will receive full credit for this portion if all files
+submitted conform to the style standards set by <tt>gofmt</tt> and the
+report from <tt>go vet</tt> is clean (that is, produces no errors).
+If your code does not pass the <tt>gofmt</tt> test, you should
+reformat your code using the tool. You can also use the <a
+href="https://github.com/qiniu/checkstyle">Go Checkstyle</a> tool for
+advice to improve your code's style, if applicable.  Additionally,
+though not part of the graded cheks, it would also be advisable to
+produce code that complies with <a
+href="https://github.com/golang/lint">Golint</a> where possible. </p>
+
+<h2>Version Control through Bitbucket</h2>
+
+<p>Because accidents can happen and it is good practice, we require
+you to use a version control system to maintain your code for this
+course.  We ask that you setup an account with <a
+href="https://bitbucket.org">Bitbucket</a>, a web-based hosting
+service for projects that use the git revision control
+system. Bitbucket allows you to have an unlimited number of free
+private repositories, so please take advantage of this and <b>do not make
+your code public</b>. We have put together instructions on how to set up
+an account with Bitbucket as well as pointers on how to use git.
+Alternately, you may use a similar service called
+<a href="https://www.github.com/">Github</a>, which provides a
+<a href="https://education.github.com/">Student Developer Pack</a>
+that is free for students.</p>
+
+<p><i>Commit and push your changes often.  You alone bear the
+responsibility in making regular data backups, so that you don't lose
+your data.</i></p>
+
+<h3>Instructions for setting up a Bitbucket account</h3>
+<p><ul>
+<li>Visit <a href="https://bitbucket.org/account/signup">the SignUp page</a>.</li>
+<li>Either signup with a personal account, or signup using a Google account.</li>
+<li>Confirm your email address.</li>
+<li>You're good to go!</li>
+<li><b>Note:</b> If you want to access your repository via SSH you will have to setup SSH for git. <a href=" https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git">Here's how</a>.</li>
+</ul></p>
+
+<h3>How do I git?</h3>
+This page has some useful tutorials on git: <a href="https://www.atlassian.com/git/tutorial">Git Tutorials</a></br>
+In particular, tutorials 1 and 5 will be most useful for this course.</p>
+
+<p>The basic git workflow in the shell (assuming you already have a repo set up):</br>
+<ul>
+<li>git pull</li>
+<li>do some work</li>
+<li>git status (shows what has changed)</li>
+<li>git add <i>all files you want to commit</i></li>
+<li>git commit -m "brief message on your update"</li>
+<li>git push</li>
+</ul>
+</p>
+
+<p>Finally, <a href="https://confluence.atlassian.com/display/BITBUCKET/Bitbucket+101">Bitbucket 101</a> is another good resource.</p>
+
+<H2>Collaboration Policy</H2>
+
+<p> Programming, like composition, is an individual creative process.
+Individuals must reach their own understanding of the problem and
+discover a path to its solution. During this time, discussions with
+friends are encouraged.  However, when the time comes to write the
+code that solves the problem, such discussions are no longer
+appropriate; the program must be your own work.</p>
+
+<p> Do not, under any circumstances, copy another person's program,
+comments, README description, or any part of the submitted assignment.
+This includes character-by-character transliteration of another works
+(whether inspected visually or copied digitally), but it also includes
+derivative works (i.e., by renaming variable names or subtly shifting
+around statements in order to try to hide that copying has occurrred).
+You are also not allowed to use other people's code, comments, or
+results, even when "citing" them -- all work must be your own.  This
+includes work done by other KAUST students this or past semesters,
+as well as any other code you find online.</p>
+
+<p>Writing code for use by another or using another's code in any form
+is academic fraud and will be dealt with firmly according to
+KAUST's disciplinary policies. You are also responsible for
+ensuring that the code you write for the assignments is not readable
+by others, which includes sharing with students in future years or
+posting publicly on the Internet.</p>
+
+
+<hr />
+<p class="lastupdated">Last updated: 2017-08-15 18:39:04</p>
+</body>
+</html>
