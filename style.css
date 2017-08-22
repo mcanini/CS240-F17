@@ -297,3 +297,18 @@ div.clear {
   clear: both;
 }
 
+pre {
+    display: block;
+    font-size: 100%;
+	color: #CFBFAD;
+	background: #272822;
+    overflow-x: auto;
+    margin: 1em;
+	border: 1px dashed;
+	padding: 1em;
+}
+
+tt {
+    color: #585858;
+    background: #F5F5F5;
+}
