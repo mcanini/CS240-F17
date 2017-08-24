@@ -312,3 +312,10 @@ tt {
     color: #585858;
     background: #F5F5F5;
 }
+
+ul.hints{
+    color:#663300;
+    margin: 1em;
+    padding: 0.5em;
+    list-style-type: none;
+}
